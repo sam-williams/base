@@ -618,6 +618,25 @@ ul.menu-secondary li {
 ul.menu-secondary li a {
   display: block;
 }
+@media (max-width: 767px) {
+  nav:before {
+    content: '\e822';
+    font-family: "entypo";
+    display: block;
+    font-size: 2em;
+    margin-bottom: 0.3em;
+  }
+  ul.menu-primary {
+    overflow-x: scroll;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    -webkit-user-select: none;
+  }
+  ul.menu-primary > li {
+    display: inline-block;
+  }
+}
 @font-face {
   font-family: 'entypo';
   src: url('../fonts/entypo.eot?59575301');
